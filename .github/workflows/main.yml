@@ -14,14 +14,14 @@ jobs:
       - name: Checkmarx One CLI Action
         uses: checkmarx/ast-github-action@main #Github Action version
         with:
-          project_name: NewLiza_forGithubActions
+          project_name: Liza_forGithubActions
           cx_tenant: rc_tenant
           base_uri: https://rc.dev.cxast.net/
           cx_client_id: ${{ secrets.CX_CLIENT_ID }}
           cx_client_secret: ${{ secrets.CX_CLIENT_SECRET }}
         additional_params: --report-format sarif --output-path .
-         - name:Upload SARIF file
-          uses:github/codeql-action/upload-sarif@v2
-          with:
-            # Path to SARIF file relative to the root of the repository
-            sarif_file: cx_result.sarif
+       - name: Upload SARIF file
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          # Path to SARIF file relative to the root of the repository
+          sarif_file: cx_result.sarif

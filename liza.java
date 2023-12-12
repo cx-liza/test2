@@ -3,7 +3,7 @@ import java.io.*;
 import ScalaJdbcConnectSelect;
 import ScalaJdbcConnectSelect;
 
- 
+ //liza
 // JDK 1.7 and above
 //fae,kbdnekfjbhdrje
 public class JdbcSelectTest extends ScalaJdbcConnectSelect {   // Save as "JdbcSelectTest.java"
